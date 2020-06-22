@@ -1,0 +1,123 @@
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  transition: all 0.5s ease;
+  a.navbar-brand {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+  .navbar-toggler-icon {
+    padding-top: 10px;
+  }
+  .navbar-collapse {
+    z-index: 1;
+    .navbar-nav {
+      @include media-breakpoint-down(sm) {
+        background: rgba(52, 59, 64, 0.9);
+        -webkit-box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.15);
+        li {
+          margin-left: 20px;
+          padding: 10px;
+          a {
+            color: $white !important;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    ul {
+      li {
+        display: inline-block;
+        padding: 0px 10px;
+        a {
+          font-size: 12px;
+          font-weight: bold;
+          color: $white;
+          padding-right: 22px;
+          padding-left: 22px;
+          text-transform: uppercase;
+          &:hover {
+            color: $theme-color;
+            transition: all 0.4s ease-in-out;
+          }
+          @include media-breakpoint-down(md) {
+            font-size: 9px;
+          }
+          @include media-breakpoint-down(sm) {
+            font-size: 16px;
+            font-weight: 600;
+            padding: 0 !important;
+          }
+        }
+        &.active {
+          a {
+            color: $white;
+            transition: all 0.4s ease-in-out;
+            &:hover {
+                color: $theme-color !important;
+                transition: all 0.4s ease-in-out;
+            }    
+          }
+        }
+      }
+    }
+  }
+  .fixed-header {
+    background: $white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 20;
+    padding: 20px 16px;
+    // height: 72px;
+    transition: all 0.5s;
+    .navbar-brand {
+      color: $black !important;
+      h1{
+        color: $black;
+      }
+    }
+    ul {
+      li {
+        a {
+          color: $black !important;
+          transition: 0.3 all ease-in-out;
+        }
+      }
+    }
+    &.active {
+      color: $black !important;
+      transition: all 0.4s ease-in-out;
+    }
+    // .navbar-nav{
+    //     .active{
+    //         color: $theme-color !important;
+    //     }
+    // }
+    .functional-buttons {
+      ul {
+        li {
+          &:first-child a {
+            border: 2px solid $theme-color !important;
+            color: $theme-color !important;
+          }
+        }
+      }
+      .navbar-toggler {
+        border: 2px solid $theme-color;
+      }
+    }
+  }
+}

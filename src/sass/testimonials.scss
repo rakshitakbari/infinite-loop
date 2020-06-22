@@ -1,0 +1,49 @@
+#testimonials{
+    color: $white;
+    background-image: url(../images/infinite-loop-02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center -174px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    .testimonials-details{
+        h2{
+            font-size: 2.6rem;
+            font-weight: normal;
+            color: $white!important;
+            text-align: center!important;
+            line-height: 1.2;
+        }
+        p{
+            max-width: 650px;
+            width: 100%;
+            font-size: 0.9rem;
+            line-height: 1.9;
+            font-weight: 400;
+            color: $white;
+            font-size: 16px;
+        }
+    }
+    .space{
+        margin-top: 40px;
+        img{
+            border-radius: 50%;
+            margin-bottom: 35px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        .testimonials-box{
+            p{
+                font-size: 16px;
+                line-height: 1.8em;
+                color: $white;
+                font-family: "Raleway", sans-serif;
+                text-align: left;
+            }
+        }
+    }
+}
